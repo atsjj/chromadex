@@ -1,10 +1,36 @@
-chrome.app.runtime.onLaunched.addListener(function() {
-	// UI Code here
-	var app = chrome.app.window.create('window.html', {
-		id: "dexcomcharting",
-		bounds: {
-			width: 600,
-			height: 300
-		}
-	});
-});
+function Driver() {
+  this.connected = false;
+  this.connection = null;
+  this.port = null;
+  this.buffer = [];
+}
+
+Driver.prototype.connect = function() {
+
+}
+
+Driver.prototype.readSerial = function() {
+
+}
+
+Driver.prototype.writeSerial = function() {
+
+}
+
+Driver.prototype.readFromReceiver = function() {
+
+}
+
+Driver.prototype.getEGVDataPageRange = function() {
+
+}
+
+Driver.prototype.getLastFourPages = function() {
+
+}
+
+Driver.prototype.parseDatabasePages = function() {
+
+}
+
+export default Driver;
